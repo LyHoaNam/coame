@@ -1,0 +1,21 @@
+{
+  "name": "@ga-com/protocol",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "development": "./src/index.ts",
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json"
+  },
+  "dependencies": {
+    "@ga-com/game-core": "0.1.0",
+    "@colyseus/schema": "5.0.45",
+    "zod": "4.6.7"
+  }
+}

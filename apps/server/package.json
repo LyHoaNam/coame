@@ -1,0 +1,19 @@
+{
+  "name": "@ga-com/server",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "HOST=127.0.0.1 NODE_OPTIONS=--conditions=development tsx watch src/index.ts",
+    "build": "tsc -p tsconfig.build.json",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@ga-com/game-core": "0.1.0",
+    "@ga-com/protocol": "0.1.0",
+    "@colyseus/core": "0.18.27",
+    "@colyseus/ws-transport": "0.18.4",
+    "express": "5.3.0",
+    "zod": "4.6.7"
+  }
+}
